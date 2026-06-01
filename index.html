@@ -14,10 +14,14 @@
 
         .ungmud-bg{
             background-color: #851cef;
+
+            color: white;
         }
 
         .ungmud-bg:hover{
             background-color: #53277E;
+
+            color: white;
         }
 
         #home{
@@ -198,6 +202,55 @@
             width: 53%;
         }
 
+        #projects {
+            background-color: #ffffff;
+            padding: 100px 0;
+        }
+
+        .project-title {
+            font-weight: 700;
+        }
+
+        .project-subtitle {
+            color: #6c757d;
+        }
+
+        .project-card {
+            height: 100%;
+
+            padding: 25px;
+
+            border-radius: 15px;
+
+            border: 1px solid #dee2e6;
+
+            transition: .3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+
+            box-shadow: 0 10px 20px rgba(0,0,0,.1);
+        }
+
+        .project-card h4 {
+            font-weight: 600;
+        }
+
+        .project-card small {
+            display: block;
+
+            color: #6c757d;
+
+            margin-bottom: 15px;
+        }
+
+        .project-card p {
+            text-align: justify;
+
+            margin-bottom: 20px;
+        }
+
         @media (max-width: 768px) {
 
             #home .container {
@@ -251,7 +304,7 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#skills">Keahlian</a></li>
-                            <li><a class="dropdown-item" href="#">Projek</a></li>
+                            <li><a class="dropdown-item" href="#">Proyek</a></li>
                             <li><a class="dropdown-item" href="#">Pendidikan</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="#">Pengalaman</a></li>
@@ -301,7 +354,7 @@
                     <div class="col-6 col-md-3">
                         <a href="#projects" class="quick-card">
                             <i class="bi bi-folder-fill fs-2"></i>
-                            <span>Projek</span>
+                            <span>Proyek</span>
                         </a>
                     </div>
                     <div class="col-6 col-md-3">
@@ -514,6 +567,147 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="project-title">
+                    <i class="bi bi-folder-fill me-2"></i>
+                    Proyek
+                </h2>
+
+                <p class="project-subtitle">
+                    Beberapa proyek yang pernah saya kerjakan.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <h4>Desain Landing Page Website Perusahaan</h4>
+                        <small>
+                            PT. Korpora Consulting • 01 Februari - 01 Mei 2023
+                        </small>
+
+                        <p>
+                            Mendesain halaman-halaman produk tertentu
+                            pada website perusahaan, menggunakan WordPress.
+                            Namun, sudah banyak dari desain saya yang sempat
+                            digantikan karena berlalunya waktu.
+                        </p>
+
+                        <a href="https://pastiprestasi.com/" target="_blank" class="btn ungmud-bg">
+                            Selengkapnya
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <h4>Desain UI/UX pada Website Perusahaan</h4>
+                        <small>
+                            PT. Orbit Cipta Aplikatama • 04 - 22 November 2023
+                        </small>
+
+                        <p>
+                            Melakukan desain ulang atau <i>redesign</i> pada website perusahaan,
+                            dengan mengutamakan tampilan yang nyaman dilihat,
+                            serta tampilan yang mudah dimengerti.
+                        </p>
+
+                        <a href="https://www.figma.com/design/l0Uu6qyFvM7zeECzPQmd9v/Kelas-Industry?node-id=0-1&t=Alox12Jzx5uCkh7Z-1" target="_blank" class="btn ungmud-bg">
+                            Selengkapnya
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <h4>Aplikasi Website Bimbingan dan Konseling</h4>
+
+                        <small>
+                            SMK Bakti Idhata • 28 Januari 2024
+                        </small>
+
+                        <p>
+                            Merancang keseluruhan aplikasi website, baik itu
+                            dari <i>backend</i> ataupun <i>frontend</i> (<i>fullstack</i>);
+                            menggunakan Laravel, PHP, HTML, CSS, & JS.
+                            Merancang aplikasi yang terdapat fungsi <i>login</i>, <i>register</i>,
+                            manipulasi <i>database</i> (CRUD), dan sesi login.
+                        </p>
+
+                        <a href="https://drive.google.com/file/d/1OU_edwPjEWIRu1Xny-wGzM4yQUA8f3tm/view?usp=drivesdk" target="_blank" class="btn ungmud-bg">
+                            Selengkapnya
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <h4>Analisis Sentimen pada Ulasan Aplikasi di PlayStore</h4>
+
+                        <small>
+                            Universitas Budi Luhur • 04 Mei 2026
+                        </small>
+
+                        <p>
+                            Melakukan analisa terhadap ulasan aplikasi dari PlayStore,
+                            menggunakan Python pada Google Colab. Tujuan dari analisa tersebut adalah
+                            mengetahui label sentimen dari ulasan-ulasan tersebut, berdasarkan
+                            KSI (Kamus Sentimen Indonesia).
+                        </p>
+
+                        <a href="projects/2411500362_ATMS-UTS_Analisis.pdf" target="_blank" class="btn ungmud-bg">
+                            Selengkapnya
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <h4>Merancang Konsep Aplikasi Mobile</h4>
+
+                        <small>
+                            Universitas Budi Luhur • 11 Mei 2026
+                        </small>
+
+                        <p>
+                            Merancang proposal akan konsep aplikasi mobile yang nantinya akan dibuat.
+                            Merupakan tugas kelompok, dan saya sebagai kepala tim yang memiliki
+                            ide akan konsep keseluruhan aplikasi, desain, fungsi, dan <i>database</i>.
+                        </p>
+
+                        <a href="projects/Kel02_UTS_Pinkies-Galleries.pdf" target="_blank" class="btn ungmud-bg">
+                            Selengkapnya
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <h4>Aplikasi Website AI Avatar Interactive</h4>
+
+                        <small>
+                            Universitas Budi Luhur • 30 Januari 2026 - Sekarang
+                        </small>
+
+                        <p>
+                            Membuat aplikasi berbasis website, berupa avatar yang dapat interaksi
+                            dengan fleksibel melalui ketikan atau ucapan suara. Pembuatan menggunakan
+                            Python dan HTML. Aplikasi ini berdasarkan <i>Chat Bot</i>, <i>Machine Learning</i>, 
+                            dan <i>AI Generative</i>.
+                        </p>
+
+                        <a href="#" class="btn btn-dark disabled">
+                            Masih dalam pengerjaan...
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
