@@ -25,6 +25,32 @@
             color: white;
         }
 
+        .ungmudgr{
+            background: linear-gradient(
+                to bottom,
+                #6b11c5,
+                #a958fb
+            );
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            background-clip: text;
+        }
+
+        .ungmudgrgs{
+            background: linear-gradient(
+                to right,
+                #6b11c5,
+                #a958fb
+            );
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            background-clip: text;
+        }
+
         #home{
             height: 78vh;
     
@@ -74,7 +100,7 @@
         }
 
         #about {
-            background: linear-gradient(to right, #e5e5e5, #ffffff);
+            background: linear-gradient(to right, #c0c0c0, #ffffff);
             text-align: justify;
         }
 
@@ -103,7 +129,7 @@
         }
 
         #skills {
-            background: linear-gradient(to bottom,#202020,#2f2f2f);
+            background: linear-gradient(to bottom,#010101,#3a3a3a);
 
             padding: 100px 0;
         }
@@ -261,6 +287,82 @@
             text-align: justify;
 
             margin-bottom: 20px;
+        }
+
+        #education{
+            background: linear-gradient(to right, #010101, #343434);
+
+            padding: 100px 0;
+        }
+
+        .timeline {
+            position: relative;
+            margin-left: 20px;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+
+            left: 0;
+            top: 0;
+
+            width: 3px;
+            height: 100%;
+
+            background: linear-gradient(
+                to bottom,
+                #6b11c5,
+                #a958fb
+            );
+        }
+
+        .timeline-item {
+            position: relative;
+
+            margin-left: 40px;
+            margin-bottom: 40px;
+        }
+
+        .timeline-item::before {
+            content: "";
+
+            position: absolute;
+
+            left: -48px;
+            top: 10px;
+
+            width: 16px;
+            height: 16px;
+
+            border-radius: 50%;
+
+            background: linear-gradient(
+                to left,
+                #6b11c5,
+                #a958fb
+            );
+        }
+
+        .education-icon {
+            width: 250px;
+            max-width: 80%;
+
+            margin-bottom: 30px;
+
+            opacity: .9;
+        }
+
+        .education-quote {
+            font-size: 1.2rem;
+
+            font-style: italic;
+
+            max-width: 450px;
+
+            margin: auto;
+
+            line-height: 1.8;
         }
 
         @media (max-width: 768px) {
@@ -723,6 +825,51 @@
                             Masih dalam pengerjaan...
                         </a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <div class="text-center">
+                <h2 style="margin-bottom: 80px; margin-top: -50px;" class="ungmudgr">
+                    <i class="bi bi-mortarboard-fill me-2"></i>
+                    Pendidikan
+                </h2>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="timeline" style="margin-left: 100px;">
+                        <div class="timeline-item ungmudgr">
+                            <h4>Universitas Budi Luhur</h4>
+                            <h6>S1 Teknik Informatika</h6>
+                            <span>2024 - Sekarang</span>
+                        </div>
+
+                        <div class="timeline-item ungmudgr">
+                            <h4>SMK Bakti Idhata</h4>
+                            <h6>Rekayasa Perangkat Lunak</h6>
+                            <span>2021 - 2024</span>
+                        </div>
+
+                        <div class="timeline-item ungmudgr">
+                            <h4>SMPN 11 JAKARTA</h4>
+                            <span>2018 - 2021</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 text-center">
+                    <div class="icon-wrapper">
+                        <img src="img/dec-1-gradient.png" class="education-icon img-fluid" alt="Education">
+                    </div>
+
+                    <blockquote class="education-quote ungmudgrgs">
+                        "An investment in knowledge pays the best interest."
+                        — Benjamin Franklin
+                    </blockquote>
                 </div>
             </div>
         </div>
